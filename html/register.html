@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <link rel="stylesheet" href="../css/registerstyle.css">
+	
+    <title>Regisration Form</title> 
+</head>
+<body>
+    
+    <div class="container">
+        <h1><center>Register Now</center></h1>
+
+        <form action="../php/connect.php" method="post">
+            <div class="form first">
+                <div class="user details">
+				
+                    <span class="title"><h2>Job seeker</h></span>
+
+                    <div class="fields">
+                        <div class="input-field">
+                            <label>Full Name</label>
+                            <input type="text" placeholder="Enter your name" name="fullName" />
+                        </div>
+
+                        <div class="input-field">
+                            <label>Date of Birth</label>
+                            <input type="date" placeholder="Enter birth date" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Email</label>
+                            <input type="text" placeholder="Enter your email" name="email" />
+                        </div>
+
+                        <div class="input-field">
+                            <label>Mobile Number</label>
+                            <input type="number" placeholder="Enter mobile number" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Gender</label>
+                            <select required>
+                                <option disabled selected>Select gender</option>
+                                <option>Male</option>
+                                <option>Female</option>
+                            </select>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Age</label>
+                            <input type="text" placeholder="Enter your age" required>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="details ID">
+                    <span class="title">Job Details</span>
+
+                    <div class="fields">
+                         <div class="input-field">
+                            <label>Job type</label>
+                            <select required>
+                                <option disabled selected>Select job type</option>
+                                <option>Full time</option>
+                                <option>Part time</option>
+                            </select>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Best Skill</label>
+                            <select required>
+                                <option disabled selected>Select skill</option>
+                                <option>Email marketing</option>
+                                <option>Adobe Photoshop skills</option>
+								<option>programming</option>
+                                <option>design</option>
+								<option>Graphic design</option>
+                                <option>Social media marketing</option>
+								<option>Leadership skills</option>
+                                <option>UX design</option>
+								<option>Digital marketing skills</option>
+                                <option>Typing skills</option>
+								<option>Accounting skills</option>
+								<option>Resume skills</option>
+								<option>Communication</option>
+								<option>WordPress skills</option>
+                                <option></option>
+                            </select>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Favourite job</label>
+                            <input type="text" placeholder="Enter Favourite job" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Qualifications</label>
+                            <input type="text" placeholder="Enter qualifications" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>User Name</label>
+                            <input type="text" placeholder="Enter a user name" name="userName" />
+                        </div>
+
+                        <div class="input-field">
+                            <label>Password</label>
+                            <input type="text" placeholder="Enter a password" required>
+                        </div>
+                    </div>
+
+                    <button class="nextBtn">
+                        <span class="btnText">Employer</span>
+                        <i class="uil uil-navigator"></i>
+                    </button>
+                </div> 
+            </div>
+
+
+            <div class="form second">
+                <div class="details address">
+                    <span class="title"><h1>Employer</h1></span>
+
+                    <div class="fields">
+                        <div class="input-field">
+                            <label>Full Name</label>
+                            <input type="text" placeholder="Enter your name" name="fullName" />
+                        </div>
+
+                        <div class="input-field">
+                            <label>Email</label>
+                            <input type="text" placeholder="Enter your email" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Contact</label>
+                            <input type="text" placeholder="Enter your contact number" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Post</label>
+                            <input type="text" placeholder="Enter your post" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>User Name</label>
+                            <input type="text" placeholder="Enter a username" name="userName"/>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Password</label>
+                            <input type="text" placeholder="Enter a password" required>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="details family">
+                    <span class="title"><h3>Company Details<h3></span>
+
+                    <div class="fields">
+                        <div class="input-field">
+                            <label>Company Name</label>
+                            <input type="text" placeholder="Enter company name" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Job title</label>
+                            <input type="text" placeholder="Enter job title" required>
+                        </div>
+
+                         <div class="input-field">
+                            <label>Job type</label>
+                            <select required>
+                                <option disabled selected>Select job type</option>
+                                <option>Full time</option>
+                                <option>Part time</option>
+                            </select>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Qualifications</label>
+                            <input type="text" placeholder="Enter qualifications" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Skills</label>
+                            <input type="text" placeholder="skiils" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Description</label>
+                            <input type="text" placeholder="Job Description" required>
+                        </div>
+                    </div>
+
+                    <div class="buttons">
+                        <div class="backBtn">
+                            <i class="uil uil-navigator"></i>
+                            <span class="btnText">Back</span>
+                        </div>
+                        
+                        <button class="sumbit">
+                            <span class="btnText">Submit</span>
+                            <i class="uil uil-navigator"></i>
+                        </button>
+                    </div>
+                </div> 
+            </div>
+        </form>
+    </div>
+
+    <script src="../js/registerscript.js"></script>
+    
+</body>
+</html>

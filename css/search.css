@@ -1,0 +1,17 @@
+body{
+    background-color: #f3f3f3;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; 
+    
+}
+
+.job-container{
+    width: 900px;
+    background: rgb(173, 172, 172);
+    padding: 30px;
+    margin-left: 250px;
+}
+.job-box{
+    padding-bottom: 40px;
+    width: 100%;
+
+}

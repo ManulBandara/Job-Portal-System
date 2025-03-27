@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<style>
+input[type=text], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+input[type=email], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type=submit] {
+  width: 100%;
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+div {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+</style>
+<body>
+
+<h3>Application Form</h3>
+
+<div>
+  <form action="/action_page.php">
+    <label for="fname">First Name</label>
+    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+    <label for="lname">Last Name</label>
+    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+	
+	<label for="address">Address</label>
+    <input type="text" id="address" name="address" placeholder="Your address..">
+	
+	<label for="email">Email</label><br/>
+    <input type="email" id="email" name="email" placeholder="abc@gmail.com"
+	pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}"required> <br/><br/>
+
+
+    <label for="Job Type">JobType</label>
+    <select id="Job Type" name="JobType">
+      <option value="part time">Part Time</option>
+      <option value="Full time">Full Time</option>
+    </select>
+<fieldset>
+    <legend>Documents</legend>
+    <input type="hidden" name="MAX_FILE_SIZE" value="10485760">
+    <div class="two-cols">
+      <label>
+        Application letter
+        <input type="file" name="Application letter" accept=".doc,.docx,.pdf">
+      </label><br/><br/>
+      <label>
+        Curriculum vitae
+        <input type="file" name="Curriculum vitae" accept=".doc,.docx,.pdf">
+      </label>
+    </div>
+    <p>Possible file types: DOC, PDF. Maximum file size: 10 MB.</p>
+  </fieldset>
+  
+    <input type="submit" value="Submit">
+  </form>
+</div>
+
+</body>
+</html>
